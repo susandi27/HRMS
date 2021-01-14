@@ -1,0 +1,53 @@
+Department (table)
+------------------
+	-	id
+	-	name
+	-	remark
+
+Staff_Info (table)
+------------------
+	-	id
+	-	photo
+	-	user_id
+	-	department_id
+	-	birthday
+	-	gender
+	-	nrc
+	-	father_name
+	-	mother_name
+	-	religion
+	-	nationality
+	-	marital_status
+	-	degree
+	-	start_work_date
+	-	current_position
+	-	salary
+	-	current_position_date
+	-	ph_number
+	-	email
+	-	address
+	-	current_address
+	-	remark
+
+Leave
+-------
+    -   id
+    -   name
+    -   remark
+
+Leave_Request
+------------------
+    -   id
+    -   staff_info_id
+    -   name
+    -   current_position
+    -   department
+    -   leave_id(ခွင့်အမျိုးအစား)
+    -   remaining_leave(ခွင့်လက်ကျန်)
+    -   leave_start_date (ခွင့်စယူသည့်နေ့)
+    -   leave_end_date(ခွင့်ပြည့်သည့်နေ့)
+    -   leave_date_total(ခွင့်ရက်စုစုပေါင်း)
+    -   leave_duty_transfer_name(ခွင့်ယူစဉ် တာဝန်လွဲပြောင်းသူအမည်)
+    -   address(ခွင့်ဖြင့်နေထိုင်စဉ် နေရပ်လိပ်စာ)
+
+
