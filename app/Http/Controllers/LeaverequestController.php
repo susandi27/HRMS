@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Leave_Request;
+use App\Leaverequest;
 use Illuminate\Http\Request;
+use App\Department;
+use App\User;
+use App\Staffinfo;
 
-class Leave_RequestController extends Controller
+class LeaverequestController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +27,9 @@ class Leave_RequestController extends Controller
      */
     public function create()
     {
-        return view('backend.leave_requests.create');
+        $users = User::all();
+        $departments = Department::all();
+        return view('backend.leave_requests.create', compact('users', 'departments'));
     }
 
     /**
@@ -41,10 +46,10 @@ class Leave_RequestController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Leave_Request  $leave_Request
+     * @param  \App\Leaverequest  $leaverequest
      * @return \Illuminate\Http\Response
      */
-    public function show(Leave_Request $leave_Request)
+    public function show(Leaverequest $leaverequest)
     {
         //
     }
@@ -52,10 +57,10 @@ class Leave_RequestController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Leave_Request  $leave_Request
+     * @param  \App\Leaverequest  $leaverequest
      * @return \Illuminate\Http\Response
      */
-    public function edit(Leave_Request $leave_Request)
+    public function edit(Leaverequest $leaverequest)
     {
         //
     }
@@ -64,10 +69,10 @@ class Leave_RequestController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Leave_Request  $leave_Request
+     * @param  \App\Leaverequest  $leaverequest
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Leave_Request $leave_Request)
+    public function update(Request $request, Leaverequest $leaverequest)
     {
         //
     }
@@ -75,10 +80,10 @@ class Leave_RequestController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Leave_Request  $leave_Request
+     * @param  \App\Leaverequest  $leaverequest
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Leave_Request $leave_Request)
+    public function destroy(Leaverequest $leaverequest)
     {
         //
     }

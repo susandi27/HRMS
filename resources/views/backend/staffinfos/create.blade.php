@@ -8,7 +8,7 @@
       </div>
       <ul class="app-breadcrumb breadcrumb">
         <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
-        <li class="breadcrumb-item"><a href="{{ route('staff_infos.index') }}">ဝန်ထမ်းစာရင်း</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('staffinfos.index') }}">ဝန်ထမ်းစာရင်း</a></li>
       </ul>
     </div>
     <div class="row">
@@ -16,7 +16,7 @@
             <div class="tile">
             <h3 class="tile-title">ဝန်ထမ်းအချက်အလက်များထည့်ရန်</h3>
             <div class="tile-body">
-                <form class="forms-sample" action="{{ route('staff_infos.store') }}" method="POST" enctype="multipart/form-data">
+                <form class="forms-sample" action="{{ route('staffinfos.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">

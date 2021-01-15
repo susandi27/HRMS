@@ -4,7 +4,7 @@ Department (table)
 	-	name
 	-	remark
 
-Staff_Info (table)
+Staffinfo (table)
 ------------------
 	-	id
 	-	photo

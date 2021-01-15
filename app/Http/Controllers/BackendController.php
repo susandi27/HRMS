@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Staff_Info;
+use App\Staffinfo;
 use Facade\FlareClient\View;
 use Illuminate\Http\Request;
 use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
@@ -15,8 +15,8 @@ class BackendController extends Controller
     }
     public function info_detail($id)
     {
-        $staff_infos = Staff_Info::find($id);
-        return view('backend.staff_infos.info_detail', compact('staff_infos'));
+        $staffinfos = Staffinfo::find($id);
+        return view('backend.staffinfos.info_detail', compact('staffinfos'));
 
     }
 }

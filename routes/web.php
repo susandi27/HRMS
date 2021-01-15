@@ -19,11 +19,11 @@ Route::get('/', function () {
 
 // For Backend
 Route::get('dashboard', 'BackendController@dashboard')->name('dashboardpage');
-Route::get('staff_infos/info_detail/{id}', 'BackendController@info_detail')->name('info_detailpage');
+Route::get('staffinfos/info_detail/{id}', 'BackendController@info_detail')->name('info_detailpage');
 Route::resource('departments', 'DepartmentController');
-Route::resource('staff_infos', 'Staff_InfoController');
+Route::resource('staffinfos', 'StaffinfoController');
 Route::resource('leaves', 'LeaveController');
-Route::resource('leave_requests', 'Leave_RequestController');
+Route::resource('leave_requests', 'LeaverequestController');
 
 
 

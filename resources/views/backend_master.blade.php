@@ -107,7 +107,7 @@
             </a>
         </li>
         <li>
-            <a class="app-menu__item" href="{{ route('staff_infos.index') }}">
+            <a class="app-menu__item" href="{{ route('staffinfos.index') }}">
                 <i class="app-menu__icon fa fa-user-circle"></i>
                 <span class="app-menu__label">ဝန်ထမ်းစာရင်း</span>
             </a>
